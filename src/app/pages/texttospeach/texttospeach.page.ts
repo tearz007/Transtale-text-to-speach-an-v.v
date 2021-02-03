@@ -20,4 +20,9 @@ export class TexttospeachPage implements OnInit {
     })
   }
 
+
+  speak(){
+    
+  }
+
 }
