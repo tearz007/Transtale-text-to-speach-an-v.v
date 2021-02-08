@@ -10,19 +10,19 @@ import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 export class TexttospeachPage implements OnInit {
 
   constructor(private tts: TextToSpeech) { }
-
+  messages
   ngOnInit() {
 
-    this.tts.speak("hello world").then(()=>{
-      alert('done');
-    }).catch(err=>{
-      alert(err.message)
-    })
+
   }
 
 
-  speak(){
-    
+  speak() {
+    this.tts.speak(this.messages).then(() => {
+      alert('done');
+    }).catch(err => {
+      alert(err.message)
+    })
   }
 
 }

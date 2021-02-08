@@ -8,6 +8,12 @@
 
 <ion-content>
 
-<ion-input type="text"></ion-input>
+<ion-input [(ngModel)]="messages" placeholder="enter text" style="border-bottom: 1px solid black;" type="text"></ion-input>
+<div class="btn">
+  <ion-button id="btn" fill="outline" (click)="speak()">Speak</ion-button>
+</div>
+
+
+<!-- {{messages}} -->
 
 </ion-content>
